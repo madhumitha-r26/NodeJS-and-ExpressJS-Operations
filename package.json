@@ -1,0 +1,27 @@
+{
+  "name": "tasky",
+  "version": "1.0.0",
+  "description": "made using html,css,bootstrap and javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "run please"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhumitha-r26/Tasky_Application.git"
+  },
+  "keywords": [
+    "create",
+    "task",
+    "edit",
+    "task",
+    "delete",
+    "task"
+  ],
+  "author": "madhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhumitha-r26/Tasky_Application/issues"
+  },
+  "homepage": "https://github.com/madhumitha-r26/Tasky_Application#readme"
+}
