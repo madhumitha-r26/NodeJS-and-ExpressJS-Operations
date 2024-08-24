@@ -4,7 +4,8 @@
   "description": "made using html,css,bootstrap and javascript",
   "main": "index.js",
   "scripts": {
-    "test": "run please"
+    "test": "run please",
+    "dev":"nodemon server.js"
   },
   "repository": {
     "type": "git",
