@@ -1,12 +1,23 @@
 const http= require("http");
 const port = 8081;
 
-http.createServer((req,res)=>{
-        res.writeHead(200,{"Content-Type":"text/html"});
-        res.write("<h2> hey server started 1234 :) </h2>");
-        res.end();
-    })
+const todoList=["learn","apply things","succeed"]
 
-    .listen(port,()=>{
-        console.log(`Node JS server started running on port: ${port}`);
-    });
+http
+.createServer((req, res) => {
+// call back func
+const { method, url} = req;
+if(url==="/todos"){
+    if(method=="GET")
+    {
+    res.writeHead(200);
+    res.write(todoList.toString());
+    }
+}
+res.end();
+
+})
+.listen(port, () => {
+// call back func
+console.log(`Nodejs Server Started Runnin on Port: ${port}`);
+});
