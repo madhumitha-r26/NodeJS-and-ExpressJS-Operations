@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/madhumitha-r26/Tasky_Application#readme",
   "dependencies": {
+    "express": "^4.19.2",
     "nodemon": "^3.1.4"
   }
 }
