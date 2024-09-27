@@ -41,10 +41,12 @@ app.listen(port,()=>{
 
 // ----------------------NODEJS OPERATIONS-------------------------------
 
-/*
+
+/*these won't come in express*/
+
 const http=require("http");
-const port = 8081;
-const todoList=["learn","apply things","succeed"]
+// const port = 8081;
+// const todoList=["learn","apply things","succeed"]
 
 
 http.createServer((req, res) => {
@@ -113,4 +115,3 @@ res.end();
 console.log(`NodeJS Server Started Runnin on Port: ${port}`);
 });
 
-*/
