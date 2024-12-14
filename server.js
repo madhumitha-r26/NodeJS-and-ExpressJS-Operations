@@ -27,6 +27,17 @@ app.delete("/todos",(req,res)=>{
     res.status(204).send({message:"`Deleted item ${req.body.name}`"});
 });
 
+app.put("/todos",(req,res)=>{
+    const { oldName, newName } = req.body; 
+    const index = todoList.indexOf(oldName); 
+
+    if (index !== -1) { 
+        todoList[index] = newName; 
+        res.status(200).send({ message: "Task Updated Successfully" });
+    } else {
+        res.status(404).send({ message: "Task Not Found" }); 
+    }
+});
 
 app.listen(port,()=>{
     console.log(`NodeJS Server Started Running on port ${port}`);
